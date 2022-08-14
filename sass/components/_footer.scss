@@ -1,105 +1,172 @@
-.footer {
+.page-footer {
   width: 100%;
   height: 252px;
-  background-color: $backgroundColor;
-  color: $contactColorFooter;
+  background-color: $footerBackgroundColor;
+  // color: $footerContactAddressColor;
+}
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+}
+.contact-box {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+.page-footer__logo {
+  margin-top: 60px;
+}
+.page-footer__logo--lable {
+  color: $LogoColorFooter;
+}
+.address {
+  padding-top: 20px;
+  font-style: normal;
+  &__item {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.05em;
+    color: $footerContactAddressTitleColor;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  &__link {
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: $footerContactAddressLincColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $hoverFocusColor;
+    }
+  }
+}
+.social-card-footer {
+  margin-right: 67px;
+  &__title {
+    padding-top: 72px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $footerContactAddressTitleColor;
+  }
+  &__list {
+    display: inline-flex;
+  }
+  &__element {
+    margin-right: 10px;
+  }
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $footerSocialMediaBackground;
+    fill: $footerSocialMediaSvgColor;
+    width: 44px;
+    height: 44px;
+    transition-property: border-radius, background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      background-color: $hoverFocusColor;
+      fill: $footerSocialMediaSvgColor;
+    }
+  }
+}
+.newsletter {
+  &__title {
+    padding-top: 72px;
+    padding-bottom: 21px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $footerNewsletterTitle;
+  }
 
-  &-left {
+  &__form {
     display: flex;
     flex-direction: row;
-    // justify-content: start;
-    align-items: left;
-    padding-left: 0px;
   }
 
-  .contact-box {
-    padding-top: 60px;
-    .logo {
-      margin: 0;
-      padding: 0;
-      font-family: "Raleway";
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      a {
-        text-decoration: none;
-        .txt {
-          color: $accentColor;
-        }
-        color: $contactLogoColor;
-      }
-    }
-    .footer-contact {
-      margin-top: 20px;
-      font-style: normal;
-
-      .item {
-        width: auto;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        &:not(:last-child) {
-          margin-bottom: 9px;
-        }
-      }
-      .address {
-        letter-spacing: 0.01rem;
-        color: $contactLogoColor;
-      }
-      .link {
-        text-decoration: none;
-        color: $contactColorFooter;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-          color: $accentColor;
-        }
-      }
+  &__lable {
+    display: inline-block;
+    width: 358px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  &__email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.25;
+    letter-spacing: 0.03em;
+    color: $footerNewsletterColorTextEmail;
+    background-color: $footerBackgroundColorNewsletterEmail;
+    border: 1px solid $footerNewsletterBorderColorEmail;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    transition-property: background-color, border-color, filter, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $footerBackgroundColorNewsletterEmail;
+      border: 2px solid $hoverFocusColor;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 5px;
     }
   }
-  .social-card-footer {
-    margin-left: 70px;
-    &-title {
-      padding-top: 72px;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: $contactLogoColor;
-    }
-    &-list {
-      display: inline-flex;
-      padding-top: 20px;
-      width: 100%;
-      &-element {
-        display: inline-flex;
 
-        &-icon {
-          display: inline-flex;
-          justify-content: center;
-          align-items: center;
-          fill: $contactLogoColor;
-          width: 44px;
-          height: 44px;
-          background-color: $backgroundSocialMediaFooter;
-          border-radius: 50%;
-          margin-right: 10px;
-          transition-property: background-color, fill, border;
-          transition-duration: 250ms;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          &:hover,
-          &:focus {
-            border-radius: 50%;
-            background: $accentColor;
-            fill: $contactLogoColor;
-          }
-        }
-      }
+  &__button {
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 42px;
+    width: 200px;
+    height: 50px;
+    background-color: $footerNewsletterButtonBackgroundColor;
+    color: $footerNewsletterButtonTextColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition-property: border-radius, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border-radius: 5px;
+      background-color: $footerNewsletterButtonHover;
+      scale: 0.98;
     }
   }
-  
+  &__icon {
+    position: absolute;
+    left: 148px;
+    fill: $footerNewsletterButtonTextColor;
+  }
 }

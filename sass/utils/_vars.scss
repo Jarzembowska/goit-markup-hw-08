@@ -1,5 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
+$headerBorderBotomColor: #ececec;
+$logoColor: #2196f3;
+$logoColorHeader: #000000;
+$LogoColorFooter: #fff;
+$navigationLinkColor: #000000;
+$hoverFocusColor: #2196f3;
+$curentPageColor: #2196f3;
+$contactColorHeader: #757575;
+$contactSvgColorHeader: #757575;
+$footerBackgroundColor: #2f303a;
+$footerContactAddressTitleColor: #fff;
+$footerContactAddressLincColor: rgba(255, 255, 255, 0.6);
+$footerSocialMediaBackground: rgba(255, 255, 255, 0.1);
+$footerSocialMediaSvgColor: #fff;
+$footerNewsletterTitle: #fff;
+$footerNewsletterColorTextEmail: rgba(255, 255, 255, 0.6);
+$footerBackgroundColorNewsletterEmail: #2f303a;
+$footerNewsletterBorderColorEmail: rgba(255, 255, 255, 0.3);
+$footerNewsletterButtonBackgroundColor: #2196f3;
+$footerNewsletterButtonTextColor: #ffffff;
+$footerNewsletterButtonHover: #0d83e4;
+
+
+
 $mainTextColor: #212121;
 $accentColor: #2196f3;
 $colorLink: #000000;
@@ -9,7 +33,7 @@ $contactColorFooter: rgba(255, 255, 255, 0.6);
 $contactLogoColor: #fff;
 $backgroundColorTeam: #f5f4fa;
 $colorPortfolioFigc: #eeeeee;
-$colorBorderBotomHeader: #ececec;
+
 $colorButtonSlider: rgba(0, 0, 0, 0.15);
 $backgroundSlider: rgba(47, 48, 58, 0.4);
 $colorIconClient: #afb1b8;
@@ -24,15 +48,11 @@ $backgroundColorOverlay: rgba(33, 150, 243, 0.9);
 $backgroundWhatAreWeDoingLabel: rgba(47, 48, 58, 0.8);
 $colorWhatAreWeDoingLabel: #fff;
 $backgroundColorBackdrop: rgba(0, 0, 0, 0.2);
-$colorSubscribeNewsletterTitle: #ffffff;
-$backgroundColorSubscribeNewsletterEmail: #2f303a;
-$colorSubscribeNewsletterBorderEmail: rgba(255, 255, 255, 0.3);
-$colorSubscribeNewsletterTextEmail: rgba(255, 255, 255, 0.6);
-$colorSubscribeNewsletterBorderEmailHoverFocus:#2196f3;
+
 $backgroundColorSubscribeNewsletterButtonSave: #2196f3;
-$backgroundColorSubscribeNewsletterButtonSaveHover: #0d83e4;
-$colorSubscribeNewsletterButtonSave: #ffffff;
-$colorSubscribeNewsletterButtonSaveHover: #f3ebeb;
+
+
+
 $backgroundColorBackdropModal: #ffffff;
 $borderColorCloseBtnBackdropModal: #0000001a;
 $borderColorCloseBtnBackdropModalHover: #2196f3;

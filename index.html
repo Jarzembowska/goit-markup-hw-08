@@ -14,42 +14,38 @@
 
 <body>
   <header>
-    <div class="menu">
+    <div class="page-header">
       <div class="container">
-        <div class="navi">
-          <div class="menu_left">
-            <div class="logo">
-              <h2>
-                <a class="logo_link" href="index.html"><span class="logo1">Web</span>Studio</a>
-              </h2>
-            </div>
-            <nav class="menu_nav">
-              <ul class="nav">
-                <li class="nav_item current_page">
-                  <a class="nav_item_link" href="index.html">Agencja</a>
-                </li>
-                <li class="nav_item">
-                  <a class="nav_item_link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav_item">
-                  <a class="nav_item_link" href="#">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div class="menu-header">
+          <a class="logo page-header__logo" href="index.html"><span class="logo__label">Web</span><span
+              class="logo__label page-header__logo--lable">Studio</span></a>
+
+          <nav class="nav">
+            <ul>
+              <li class="nav__item current-page">
+                <a class="nav__link" href="index.html">Agencja</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
 
           <ul class="contact">
-            <li class="contact_item">
-              <a class="contact_item_link" href="mailto:info@example.com">
-                <svg width="16" height="12" viewBox="0 0 16 12">
+            <li class="contact__item">
+              <a class="contact__link" href="mailto:info@example.com">
+                <svg class="contact__svg" width="16" height="12" viewBox="0 0 16 12">
                   <use xlink:href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contact_item">
-              <a class="contact_item_link" href="tel:+48111111111">
-                <svg width="10" height="16" viewBox="0 0 10 16">
+            <li class="contact__item">
+              <a class="contact__link" href="tel:+48111111111">
+                <svg class="contact__svg" width="10" height="16" viewBox="0 0 10 16">
                   <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111
@@ -386,104 +382,91 @@
     <!-- END SECTION OUR CLIENTS -->
   </main>
 
-  <footer class="footer">
-    <div class="container footer-left">
-      <div class="contact-box">
-        <div class="logo">
-          <h2>
-            <a href="index.html"> <span class="txt">Web</span>Studio </a>
-          </h2>
-        </div>
-        <div>
-          <address class="footer-contact">
-            <ul class="items">
-              <li class="item address">
+  <footer class="page-footer">
+    <div class="container">
+      <div class="footer">
+        <div class="contact-box">
+          <a class="logo page-footer__logo" href="index.html">
+            <span class="logo__label">Web</span><span class="logo__label page-footer__logo--lable">Studio
+            </span>
+          </a>
+          <address>
+            <ul class="address">
+              <li class="address__item">
                 m.Warszawa, Aleje Jerozilimskie 21
               </li>
-              <li class="item">
-                <a class="link" href="mailto:info@example.com">
-                  info@devstudio.com
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com">
+                  info@example.com
                 </a>
               </li>
-              <li class="item">
-                <a class="link" href="tel:+48111111111">+48 111 111 111</a>
+              <li class="address__item">
+                <a class="address__link" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
-      </div>
-      <!-- social card-->
-      <div class="social-card-footer">
-        <h4 class="social-card-footer-title">DOŁĄCZ DO NAS</h4>
-        <ul class="social-card-footer-list">
-          <li class="social-card-footer-list-element">
-            <a class="social-card-footer-list-element-icon" href="#">
-              <svg width="20" height="20" viewBox="0 0 20 20">
-                <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-card-footer-list-element">
-            <a class="social-card-footer-list-element-icon" href="#">
-              <svg width="20" height="20" viewBox="0 0 20 20">
-                <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-card-footer-list-element">
-            <a class="social-card-footer-list-element-icon" href="#">
-              <svg class="icon" width="20" height="20" viewBox="0 0 20 20">
-                <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-card-footer-list-element">
-            <a class="social-card-footer-list-element-icon" href="#">
-              <svg width="20" height="20" viewBox="0 0 20 20">
-                <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- newsletter -->
-      <div class="subscribe-to-the-newsletter">
-        <div class="subscribe-to-the-newsletter-title"> Zapisz się do newslettera</div>
-        <!-- istnieją dwie metody do form POST oraz GET przy POST jeśli nie będziemy mieli zdefiniowanego backend serwera to nie będzie wiadomo co ma się stać po naciśnięciu wyślij -->
-        <!-- możemy tutaj ustawić również  -->
-        <!-- novalidate - ten formularz nie będzie wówczas walidowany  -->
-        <!-- autocomplete="off" przeglądarka nie będzie podpowiadała nam jaką wartość możemy wstawić np email który stosowaliśmy u siebie , zazwyczaj jednak nie ustawia się tego-->
-        <form class="subscribe-to-the-newsletter-form" method="get">
-          <div class="subscribe-to-the-newsletter-form-box">
-            <label for="subscribe-to-the-newsletter">
-              <input type="email" name="newsletter-email" placeholder="E-mail"
-                class="subscribe-to-the-newsletter-form-box-email" id="subscribe-to-the-newsletter" required
-                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+        <!-- social card-->
+        <div class="social-card-footer">
+          <div class="social-card-footer__title">Dołącz do nas</div>
+          <ul class="social-card-footer__list">
+            <li class="social-card-footer__element">
+              <a class="social-card-footer__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-card-footer__element">
+              <a class="social-card-footer__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-card-footer__element">
+              <a class="social-card-footer__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-card-footer__element">
+              <a class="social-card-footer__link" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- newsletter -->
+        <div class="newsletter">
+          <div class="newsletter__title"> Zapisz się do newslettera</div>
+          <!-- istnieją dwie metody do form POST oraz GET przy POST jeśli nie będziemy mieli zdefiniowanego backend serwera to nie będzie wiadomo co ma się stać po naciśnięciu wyślij -->
+          <!-- możemy tutaj ustawić również  -->
+          <!-- novalidate - ten formularz nie będzie wówczas walidowany  -->
+          <!-- autocomplete="off" przeglądarka nie będzie podpowiadała nam jaką wartość możemy wstawić np email który stosowaliśmy u siebie , zazwyczaj jednak nie ustawia się tego-->
+          <form class="newsletter__form" method="get">
+            <label class="newsletter__lable" for="newsletter">
+              <input class="newsletter__email" type="email" name="newsletter-email" placeholder="E-mail" id="newsletter"
+                required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
             </label>
-            <button type="submit" class="subscribe-to-the-newsletter-form-box-save">
+            <button type="submit" class="newsletter__button">
               Zapisz się
-              <svg width="24" height="24" viewBox="0 0 24 24">
+              <svg class="newsletter__icon" width="24" height="24" viewBox="0 0 24 24">
                 <use xlink:href="./images/icons.svg#icon-icon-send">
                 </use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
+        <!-- end newsletter -->
       </div>
-      <!-- end newsletter -->
     </div>
   </footer>
-  <!-- modal ze zmianą script -->
-
-  <!-- <div class="modal_container is_hidden" data-modal>
-    <div class="modal_space">
-      <div class="modal">
-        <button class="close-btn" type="button" data-modal-close>x</button>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- modal bez zmiany script  -->
+ 
+  <!-- modal -->
   <div class="backdrop is-hidden" data-modal>
     <div class="backdrop-modal">
       <div class="backdrop-modal-close-btn">
@@ -565,7 +548,7 @@
       </div>
     </div>
   </div>
-  <script src="./js/modal1.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

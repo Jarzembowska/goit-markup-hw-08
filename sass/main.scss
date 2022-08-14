@@ -1,16 +1,14 @@
 @import "utils/vars";
+@import "components/logo";
 @import "components/header";
 @import "components/slider";
 @import "components/our_attributes";
 @import "components/what_are_we_doing";
 @import "components/team";
 @import "components/portfolio";
-@import "components/footer";
 @import "components/our_clients";
-// @import "components/modal";
-// @import "components/modal1";
-@import "components/modal2";
-@import "components/footer_newsletter";
+@import "components/footer";
+@import "components/modal";
 @import "components/order";
 
 body {
@@ -33,5 +31,5 @@ p {
 .container {
   width: 1200px;
   margin: auto;
-  padding: 0 15px;
+  padding-right: 15px;
 }
