@@ -28,7 +28,8 @@ $backdropModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 $backdropModalButtonCloseBorderColor: #0000001a;
 $backdropModalButtonIconHoverFocus: #fff;
-$backdropModalAgreementCheckBoxBorder: #212121;
+$orderAgreementCheckBoxBorder: #212121;
+$orderSvgAgreementCheckBoxChecked: #2196f3;
 
 
 $accentColor: #2196f3;
@@ -66,4 +67,3 @@ $backgroundColorModalSendButton: #2196f3;
 $backgroundColorModalSendButtonHover: #1791f5;
 $colorBackdropModalAgreementCheckBoxBorder: #212121;
 $colorBackdropModalAgreementCheckBoxHoverFocus: #2196f3;
-$colorBackdropModalAgreementCheckBoxChecked: #2196f3;
