@@ -28,8 +28,22 @@ $backdropModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 $backdropModalButtonCloseBorderColor: #0000001a;
 $backdropModalButtonIconHoverFocus: #fff;
+
+$orderLabelTextColor: #757575;
+$orderLableBorderColor: rgba(33, 33, 33, 0.2);
+$orderTextareaBorderColor: rgba(33, 33, 33, 0.2);
+$orderTextareaTextColor: rgba(117, 117, 117, 0.5);
 $orderAgreementCheckBoxBorder: #212121;
-$orderSvgAgreementCheckBoxChecked: #2196f3;
+$orderAgreementCheckedSvg: #2196f3;
+$orderAgreementLink: #2196f3;
+$orderAgreementText: #757575;
+$orderButtonTextColor: #ffffff;
+$orderButtonBackground: #2196f3;
+$orderButtonBackgroundHoverFocus: #1791f5;
+
+
+
+
 
 
 $accentColor: #2196f3;
@@ -45,25 +59,20 @@ $colorButtonSlider: rgba(0, 0, 0, 0.15);
 $backgroundSlider: rgba(47, 48, 58, 0.4);
 $colorIconClient: #afb1b8;
 
-
-
-
-
-
 $backgroundColorOverlay: rgba(33, 150, 243, 0.9);
 $backgroundWhatAreWeDoingLabel: rgba(47, 48, 58, 0.8);
 $colorWhatAreWeDoingLabel: #fff;
 
-$borderColorCloseBtnBackdropModalHover: #2196f3;
-$borderColorLableText: #757575;
-$colorFormLableTextarea: rgba(117, 117, 117, 0.5);
-$borderColorLableBorderText: rgba(33, 33, 33, 0.2);
-$borderColorLableBorderTextChecked: #2196f3;
-$colorBackdropModalAgreementText: #757575;
-$colorBackdropModalAgreementLink: #2196f3;
-$colorBackdropModalAgreementSvg: #ffffff;
-$colorBackdropModalSendButton: #ffffff;
-$backgroundColorModalSendButton: #2196f3;
+
+
+
+
+
+
+
+
+
+
 $backgroundColorModalSendButtonHover: #1791f5;
 $colorBackdropModalAgreementCheckBoxBorder: #212121;
 $colorBackdropModalAgreementCheckBoxHoverFocus: #2196f3;
