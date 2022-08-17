@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
+$mainTextColor: #212121;
 $headerBorderBotomColor: #ececec;
 $logoColor: #2196f3;
 $logoColorHeader: #000000;
@@ -21,10 +22,15 @@ $footerNewsletterBorderColorEmail: rgba(255, 255, 255, 0.3);
 $footerNewsletterButtonBackgroundColor: #2196f3;
 $footerNewsletterButtonTextColor: #ffffff;
 $footerNewsletterButtonHover: #0d83e4;
+$backdropBackgroundColor: rgba(0, 0, 0, 0.2);
+$backdropModalBackgroundColor: #ffffff;
+$backdropModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$backdropModalButtonCloseBorderColor: #0000001a;
+$backdropModalButtonIconHoverFocus: #fff;
+$backdropModalAgreementCheckBoxBorder: #212121;
 
 
-
-$mainTextColor: #212121;
 $accentColor: #2196f3;
 $colorLink: #000000;
 $backgroundColor: #2f303a;
@@ -37,24 +43,16 @@ $colorPortfolioFigc: #eeeeee;
 $colorButtonSlider: rgba(0, 0, 0, 0.15);
 $backgroundSlider: rgba(47, 48, 58, 0.4);
 $colorIconClient: #afb1b8;
-$backgroundSocialMediaFooter: rgba(255, 255, 255, 0.1);
-$backgroundColorModalContainer: rgba(0, 0, 0, 0.1);
-$backgroundColorModalSpace: rgba(0, 0, 0, 0.3);
-$backgroundColorModal: #fff;
-$backgroundColorModalButton: rgba(0, 0, 0, 0.1);
-$boxShadowModal: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+
+
+
+
 $backgroundColorOverlay: rgba(33, 150, 243, 0.9);
 $backgroundWhatAreWeDoingLabel: rgba(47, 48, 58, 0.8);
 $colorWhatAreWeDoingLabel: #fff;
-$backgroundColorBackdrop: rgba(0, 0, 0, 0.2);
 
-$backgroundColorSubscribeNewsletterButtonSave: #2196f3;
-
-
-
-$backgroundColorBackdropModal: #ffffff;
-$borderColorCloseBtnBackdropModal: #0000001a;
 $borderColorCloseBtnBackdropModalHover: #2196f3;
 $borderColorLableText: #757575;
 $colorFormLableTextarea: rgba(117, 117, 117, 0.5);

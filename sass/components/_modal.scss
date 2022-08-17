@@ -5,13 +5,14 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: $backgroundColorBackdrop;
+  background-color: $backdropBackgroundColor;
   //  z samym transition bez animation okno modalne pojawia się stopniowo na środku
   transition: opacity 750ms, visibility 750ms, scale 750ms;
   // z animation okno modalne wykonuje animację SlideIn na końcu wracając do pozycji bazowej na środku
   animation: slideIn 750ms cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
   z-index: 15;
-  &-modal {
+
+  &__modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,41 +20,43 @@
     width: 528px;
     min-height: 581px;
     border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: $backgroundColorBackdropModal;
-    &-close-btn {
-      position: absolute;
-      margin: 0;
-      top: 8px;
-      right: 8px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: $backgroundColorBackdropModal;
-      border: 1px solid $borderColorCloseBtnBackdropModal;
-      transition-property: background-color, fill, cursor;
-      transition-duration: 250ms;
-      transition-timing-function: cubick-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      &-icon {
-        margin: 5px 5px 5px 5px;
-      }
+    box-shadow: $backdropModalBoxShadow;
+    background-color: $backdropModalBackgroundColor;
+  }
 
-      &:hover,
-      &:focus {
-        background-color: $borderColorCloseBtnBackdropModalHover;
-        fill: white;
-      }
+  &__button-close {
+    position: absolute;
+    margin: 0;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $backdropModalBackgroundColor;
+    border: 1px solid $backdropModalButtonCloseBorderColor;
+    transition-property: background-color, fill, cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubick-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $hoverFocusColor;
+      fill: $backdropModalButtonIconHoverFocus;
     }
   }
+
+  &__icon-close {
+    margin: 5px 5px 5px 5px;
+  }
 }
+
 // odwołanie do skrypu js na końcu html
-// <script src="./js/modal2.js"></script>
+// <script src="./js/modal.js"></script>
 // dodaje wywołanie okna modalnego z formularzem zgłoszeniowym
 // okno modalne otwiera się po kliknięciu w button "Zamów usługę".
 // Aby script działał, musimy dodać specjalne atrybuty do znaczników HTML,
-// po których skrypt wyszukuje lementy:
+// po których skrypt wyszukuje elmenty:
 // data-modal-open - do przycisku otwierania okna modalnego.
 // data-modal-close - do przycisku zamykania okna modalnego.
 // data-modal - do backdrop okna modalnego
@@ -70,20 +73,25 @@
   0% {
     transform: translateX(-1000px) scale(0.75);
   }
+
   70% {
     transform: translateX(-50%, -50%) scale(0.9);
   }
+
   100% {
     transform: translateX(-50%, -50%) scale(1);
   }
 }
+
 @keyframes slideOut {
   0% {
     transform: translateX(0px) scale(1);
   }
+
   30% {
     transform: translateX(40%, 10%) scale(0.9);
   }
+
   100% {
     transform: translateX(1500px) scale(0.75);
   }
