@@ -10,6 +10,11 @@ $hoverFocusColor: #2196f3;
 $curentPageColor: #2196f3;
 $contactColorHeader: #757575;
 $contactSvgColorHeader: #757575;
+$sliderButtonBackground: #2196f3;
+$sliderButtonBackgroundHoverFocus: #098bf5;
+$sliderButtonTextColor: #fff;
+$sliderButtonBoxShadow: rgba(0, 0, 0, 0.15);
+
 $atributesBackgroundColor: #f5f4fa;
 $teamBackgroundColor: #f5f4fa;
 $teamIconMediaColor: #afb1b8;
@@ -28,7 +33,7 @@ $footerNewsletterBorderColorEmail: rgba(255, 255, 255, 0.3);
 $footerNewsletterButtonBackgroundColor: #2196f3;
 $footerNewsletterButtonTextColor: #ffffff;
 $footerNewsletterButtonHover: #0d83e4;
-$portfolioButtonBackground:#f5f4fa;
+$portfolioButtonBackground: #f5f4fa;
 $backdropBackgroundColor: rgba(0, 0, 0, 0.2);
 $backdropModalBackgroundColor: #ffffff;
 $backdropModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -62,8 +67,8 @@ $contactLogoColor: #fff;
 
 $colorPortfolioFigc: #eeeeee;
 
-$colorButtonSlider: rgba(0, 0, 0, 0.15);
-$backgroundSlider: rgba(47, 48, 58, 0.4);
+
+// $backgroundSlider: rgba(47, 48, 58, 0.4);
 
 
 $backgroundColorOverlay: rgba(33, 150, 243, 0.9);

@@ -1,80 +1,60 @@
 /* sekcja pierwsza slider */
-// .slider_bacground {
-//   background: $bacgroundSlider;
-//   background-image: url(../../images/slider.jpg);
-//   width: 100%;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-// można to jeszcze rozwiązać poprzez
-// .slider{
-//  bacground: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/slider.jpg) no-repeat center;
-// na elementach title, button_modal ustawiamy dodatkowo wtedy z-index: 10;
 .slider {
-  width: 100%;
+  max-width: 1600px;
   height: 600px;
-  background: $backgroundColor url(../images/slider.jpg) no-repeat center;
+  margin: auto;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/slider.jpg) no-repeat center;
   position: relative;
   z-index: 3;
-  &:after {
-    content: "";
-    background: $backgroundSlider;
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  & > * {
-    position: relative;
-    z-index: 10;
-  }
 
-  &_header {
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &_title {
-      width: 696px;
-      color: $contactLogoColor;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin: 0;
-      padding: 0;
-    }
-    &_button {
-      width: 200px;
-      height: 50px;
-      margin: 0;
-      margin-top: 30px;
-      background-color: $accentColor;
-      color: $contactLogoColor;
-      display: block;
-      border-radius: 4px;
-      border: none;
-      box-shadow: 0px 4px 4px $colorButtonSlider;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-      letter-spacing: 0.06em;
-      transition-property: border-radius, background-color, color, box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      &:focus {
-        border-radius: 5px;
-        background-color: $accentColor;
-        color: $contactLogoColor;
-        box-shadow: 0px 4px 4px $colorButtonSlider;
-      }
-    }
-  }
 }
 
+.slider-image {
+  height: 600px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-title {
+  width: 696px;
+  color: $contactLogoColor;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-button {
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  margin-top: 30px;
+  background-color: $sliderButtonBackground;
+  color: $sliderButtonTextColor;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px $sliderButtonBoxShadow;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  scale: 1;
+  transition-property: background-color, scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    scale: 0.98;
+    background-color: $sliderButtonBackgroundHoverFocus;
+  }
+}
