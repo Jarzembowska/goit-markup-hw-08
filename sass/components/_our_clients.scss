@@ -1,6 +1,9 @@
-.our_clients {
+.our-clients {
   width: 100%;
-  h2 {
+
+  &__title {
+    display: flex;
+    justify-content: center;
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
@@ -10,28 +13,35 @@
     padding-bottom: 50px;
     color: $mainTextColor;
   }
-  .clients_list {
-    display: flex;
-    gap: 30px;
+}
 
-    .client_list_logo {
-      // list-style: none;
-      display: flex;
-      width: 170px;
-      height: 92px;
-      align-items: center;
-      justify-content: center;
-      fill: $colorIconClient;
-      border: 1px solid $colorIconClient;
-      border-radius: 4px;
-      transition-property: border, fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        border: 1px solid $accentColor;
-        fill: $accentColor;
-      }
-    }
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  fill: $clientLogoColor;
+  border: 1px solid $clientLogoBorderColor;
+  border-radius: 4px;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $hoverFocusColor;
+    fill: $hoverFocusColor;
   }
+}
+
+.client-logo__icon {
+  width: 106px;
+  height: 60px;
+
 }

@@ -1,9 +1,11 @@
 .team {
   width: 100%;
-  background-color: $backgroundColorTeam;
+  background-color: $teamBackgroundColor;
+
   .our_team {
     justify-content: center;
     align-items: center;
+
     h2 {
       font-weight: 700;
       font-size: 36px;
@@ -12,10 +14,12 @@
       letter-spacing: 0.03em;
       padding-bottom: 50px;
     }
+
     .person {
       display: flex;
       gap: 30px;
     }
+
     figure {
       // margin-top: 50px;
       margin: 0;
@@ -26,9 +30,11 @@
       border-radius: 0px 0px 4px 4px;
       display: inline-block;
       background-color: $contactLogoColor;
+
       img {
         width: 270px;
       }
+
       // poniższy zapis został zastąpiony gap: 30px;
       // &:not(:last-child) {
       //   margin-right: 30px;
@@ -44,6 +50,7 @@
       figcaption {
         padding-top: 30px;
         padding-bottom: 30px;
+
         .name {
           // padding-top: 30px;
           font-weight: 500;
@@ -52,6 +59,7 @@
           text-align: center;
           letter-spacing: 0.03em;
         }
+
         .profession {
           padding-top: 10px;
           font-size: 16px;
@@ -60,8 +68,10 @@
           letter-spacing: 0.03em;
           color: $contactColorMain;
         }
+
         .social_card {
           padding-top: 16px;
+
           &_list {
             display: inline-flex;
             justify-content: center;
@@ -69,17 +79,19 @@
             margin: 0;
             padding: 0 32px;
             width: 100%;
+
             &_element {
               display: inline-flex;
               justify-content: center;
               align-items: center;
+
               &_icon {
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
                 background-color: $contactLogoColor;
-                fill: $colorIconClient;
+                fill: $teamIconMediaColor;
                 width: 44px;
                 height: 44px;
                 margin-right: 10px;
@@ -90,8 +102,8 @@
                 &:hover,
                 &:focus {
                   border-radius: 50%;
-                  background: $accentColor;
-                  fill: $contactLogoColor;
+                  background: $hoverFocusColor;
+                  fill: $teamIconMediaColorHover;
                 }
               }
             }

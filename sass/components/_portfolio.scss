@@ -1,5 +1,6 @@
 .main_portfolio {
   width: 100%;
+
   .main_nav {
     display: flex;
     justify-content: center;
@@ -7,9 +8,11 @@
     &_portfolio {
       li {
         display: inline;
+
         &:not(:last-child) {
           margin-right: 8px;
         }
+
         .button_portfolio {
           font-weight: 500;
           font-size: 16px;
@@ -17,7 +20,7 @@
           text-align: center;
           letter-spacing: 0.03em;
           box-shadow: none;
-          background-color: $backgroundColorTeam;
+          background-color: $portfolioButtonBackground;
           border-radius: 4px;
           border: 0px;
           padding: 6px 22px;
@@ -25,9 +28,10 @@
           transition-property: color, background-color, box-shadow;
           transition-duration: 250ms;
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
           &:hover,
           &:focus {
-            background: $accentColor;
+            background: $hoverFocusColor;
             color: $contactLogoColor;
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
               0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -36,16 +40,20 @@
       }
     }
   }
+
   .portfolio_list {
     margin-top: 50px;
+
     ul {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
+
       li {
         flex-basis: calc((100% - 90px) / 3);
       }
     }
+
     // figure class="portfolio_list_box
     &_box {
       margin: 0;
@@ -57,6 +65,7 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       z-index: 1;
+
       &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
           0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -65,6 +74,7 @@
       img {
         display: block;
       }
+
       figcaption {
         border-left: 1px solid $colorPortfolioFigc;
         border-bottom: 1px solid $colorPortfolioFigc;
@@ -74,6 +84,7 @@
         position: relative;
         z-index: 3;
       }
+
       .box_title {
         font-weight: 700;
         font-size: 18px;
@@ -82,6 +93,7 @@
         color: $mainTextColor;
         z-index: 3;
       }
+
       .box_information {
         font-size: 16px;
         line-height: 1.88;
@@ -89,6 +101,7 @@
         color: $contactColorMain;
         z-index: 3;
       }
+
       .overlay {
         position: absolute;
         top: 0;
@@ -100,7 +113,8 @@
         transition: transform 250ms ease;
         z-index: 2;
       }
-      .overlay > p {
+
+      .overlay>p {
         padding: (49px 45px 49px 24px);
         margin: 0;
         font-size: 18px;
@@ -109,6 +123,7 @@
         color: #ffffff;
         z-index: 2;
       }
+
       &:hover .overlay {
         transform: translateX(0);
       }
