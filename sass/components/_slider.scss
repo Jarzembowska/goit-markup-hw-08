@@ -1,26 +1,26 @@
 /* sekcja pierwsza slider */
-.slider {
+.slider-area {
   max-width: 1600px;
   height: 600px;
+  display: flex;
   margin: auto;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/slider.jpg) no-repeat center;
+  background: linear-gradient($sliderGradientBackground, $sliderGradientBackground), url(../images/slider.jpg) no-repeat center;
   position: relative;
   z-index: 3;
 
 }
 
-.slider-image {
-  height: 600px;
-  padding-left: 15px;
+.slider__image {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.slider-title {
+.slider__title {
   width: 696px;
-  color: $contactLogoColor;
+  color: $sliderTitleColor;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -31,7 +31,7 @@
   padding: 0;
 }
 
-.slider-button {
+.slider__button {
   width: 200px;
   height: 50px;
   margin: 0;
