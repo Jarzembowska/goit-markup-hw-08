@@ -167,14 +167,17 @@
   width: 100%;
   margin-top: 94px;
 }
-.attributes ul {
+
+.attributes-items {
   display: flex;
   gap: 30px;
 }
-.attributes ul li {
+
+.attributes__item {
   list-style: none;
 }
-.attributes ul li .attributes_list_icon {
+
+.attributes__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +186,13 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-.attributes ul li .attributes_title {
+
+.attributes__icon-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.attributes__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -192,7 +201,8 @@
   padding-top: 30px;
   padding-bottom: 10px;
 }
-.attributes ul li .attributes_desc {
+
+.attributes__desc {
   width: 270px;
   text-align: justify;
   font-size: 14px;
@@ -212,6 +222,8 @@
   height: 294px;
 }
 .activities__title {
+  display: flex;
+  justify-content: center;
   font-weight: 700px;
   font-size: 35px;
   line-height: 1.17;
@@ -978,4 +990,5 @@ p {
 .container {
   width: 1200px;
   margin: auto;
+  padding-right: 15px;
 }/*# sourceMappingURL=main.css.map */
