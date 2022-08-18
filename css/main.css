@@ -27,8 +27,6 @@
 }
 
 .page-header__logo {
-  display: flex;
-  justify-self: flex-start;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
