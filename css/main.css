@@ -24,6 +24,7 @@
   flex-direction: row;
   align-items: center;
   vertical-align: middle;
+  padding: 0 15px;
 }
 
 .page-header__logo {
@@ -171,6 +172,7 @@
 .attributes-items {
   display: flex;
   gap: 30px;
+  padding: 0 15px;
 }
 
 .attributes__item {
@@ -235,6 +237,7 @@
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  padding: 0 15px;
 }
 .activities__box {
   position: relative;
@@ -282,6 +285,7 @@
 .persons-cards {
   display: flex;
   gap: 30px;
+  padding: 0 15px;
 }
 
 .box-card {
@@ -481,6 +485,7 @@
 .clients-list {
   display: flex;
   gap: 30px;
+  padding: 0 15px;
 }
 
 .client-logo {
@@ -520,6 +525,7 @@
 .footer {
   display: flex;
   flex-direction: row;
+  padding: 0 15px;
 }
 
 .contact-box {
@@ -990,5 +996,4 @@ p {
 .container {
   width: 1200px;
   margin: auto;
-  padding-right: 15px;
 }/*# sourceMappingURL=main.css.map */
