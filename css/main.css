@@ -253,11 +253,10 @@
   width: 100%;
   background-color: #f5f4fa;
 }
-.team .our_team {
+
+.our-team__title {
+  display: flex;
   justify-content: center;
-  align-items: center;
-}
-.team .our_team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -265,57 +264,61 @@
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
-.team .our_team .person {
+
+.persons-cards {
   display: flex;
   gap: 30px;
 }
-.team .our_team figure {
+
+.box-card {
   margin: 0;
   width: 270px;
+  height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: inline-block;
   background-color: #fff;
 }
-.team .our_team figure img {
+.box-card__image {
   width: 270px;
+  height: 260px;
 }
-.team .our_team figure figcaption {
-  padding-top: 30px;
-  padding-bottom: 30px;
+
+.box-card__body {
+  padding-top: 28px;
+  padding-bottom: 20px;
 }
-.team .our_team figure figcaption .name {
+
+.name {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team .our_team figure figcaption .profession {
+
+.profession {
   padding-top: 10px;
+  padding-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.team .our_team figure figcaption .social_card {
-  padding-top: 16px;
-}
-.team .our_team figure figcaption .social_card_list {
+
+.social-card__items {
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0 32px;
   width: 100%;
 }
-.team .our_team figure figcaption .social_card_list_element {
+.social-card__item {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-.team .our_team figure figcaption .social_card_list_element_icon {
+.social-card__icon {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +332,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team .our_team figure figcaption .social_card_list_element_icon:hover, .team .our_team figure figcaption .social_card_list_element_icon:focus {
+.social-card__icon:hover, .social-card__icon:focus {
   border-radius: 50%;
   background: #2196f3;
   fill: #fff;
