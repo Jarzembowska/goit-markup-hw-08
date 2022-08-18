@@ -2,8 +2,8 @@
 @import "components/logo";
 @import "components/header";
 @import "components/slider";
-@import "components/our_attributes";
-@import "components/what_are_we_doing";
+@import "components/attributes";
+@import "components/activities";
 @import "components/team";
 @import "components/portfolio";
 @import "components/our_clients";
@@ -15,6 +15,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: $mainTextColor;
 }
+
 h2,
 h4,
 ul,
@@ -25,11 +26,12 @@ p {
 }
 
 .section {
-  width: 1600px;
-  margin: auto;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-bottom: 94px;
   padding-top: 94px;
 }
+
 .container {
   width: 1200px;
   margin: auto;

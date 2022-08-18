@@ -13,9 +13,9 @@
 }
 
 .page-header {
-  width: 1600px;
+  width: 100%;
   height: 80px;
-  margin: auto;
+  margin: 0 auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -110,15 +110,15 @@
   max-width: 1600px;
   height: 600px;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/slider.jpg) no-repeat center;
   position: relative;
   z-index: 3;
 }
 
 .slider__image {
-  width: 100%;
-  height: 100%;
+  max-width: 1600px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,10 +201,17 @@
   color: #757575;
 }
 
-.what_are_we_doing {
+.activities {
   width: 100%;
 }
-.what_are_we_doing_title {
+.activities__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 370px;
+  height: 294px;
+}
+.activities__title {
   font-weight: 700px;
   font-size: 35px;
   line-height: 1.17;
@@ -212,29 +219,24 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
-.what_are_we_doing img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.what_are_we_doing_list {
+.activities__list {
   display: flex;
   gap: 30px;
   margin-top: 50px;
 }
-.what_are_we_doing_list_box {
+.activities__box {
   position: relative;
   background-color: #fff;
 }
-.what_are_we_doing_list_box_label {
+.activities__label {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   margin: 0;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.what_are_we_doing_list_box p {
+.activities__desc {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -967,8 +969,8 @@ p {
 }
 
 .section {
-  width: 1600px;
-  margin: auto;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-bottom: 94px;
   padding-top: 94px;
 }
