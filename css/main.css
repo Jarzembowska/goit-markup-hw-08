@@ -914,74 +914,72 @@
 }
 
 .agreement {
-  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
+
 .agreement-check {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 15px;
-  height: 14px;
-  margin-right: 7px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  z-index: 3;
+}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 15px;
+  transform: translateX(-3px);
   cursor: pointer;
-  outline: none;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
 }
-.agreement-check:hover, .agreement-check:focus {
-  border-color: #2196f3;
+.checkbox-input:not(:checked) + svg > .checkbox-input__icon--unchecked {
+  opacity: 1;
+  fill: #000;
 }
-.agreement-check [type=checkbox]:checked ~ svg {
-  visibility: visible;
+.checkbox-input:checked + svg > .checkbox-input__icon--unchecked {
+  opacity: 0;
+}
+.checkbox-input:checked + svg > .checkbox-input__icon--checked {
+  opacity: 1;
   fill: #2196f3;
 }
 
-.agreement-label {
+.checkbox-input__icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  flex-shrink: 0;
+  opacity: 1;
+  fill: none;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.agreement__label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.agreement-link {
+.agreement__link {
+  margin-left: 3px;
   color: #2196f3;
 }
 
-.input-checkbox {
-  position: absolute;
-  opacity: 0.01;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 17px;
-  height: 17px;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.agreement-icon {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 16px;
-  visibility: hidden;
-  fill: none;
-  z-index: 1;
+.txt-span {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 3px;
 }
 
 body {

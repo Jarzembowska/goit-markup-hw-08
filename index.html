@@ -516,23 +516,22 @@
             </li>
 
             <li class="agreement">
-              <a href="#" class="agreement-check">
-                <!-- <div class="agreement-check"> -->
-                <input class="input-checkbox" type="checkbox" name="order-user-agreement" value="agreement"
+              <div class="agreement-check">
+                <input class="checkbox-input" type="checkbox" name="order-user-agreement" value="agreement"
                   id="agreement" required />
-
-                <svg class="agreement-icon" width="16" height="16" viewBox="0 0 16 16">
-                  <use xlink:href="./images/icons.svg#icon-check">
+                <svg class="checkbox-input__icon" viewBox="0 0 17 17">
+                  <use class="checkbox-input__icon--unchecked" xlink:href="./images/icons.svg#icon-icon-uncheck">
+                  </use>
+                  <use class="checkbox-input__icon--checked" xlink:href="./images/icons.svg#icon-check">
                   </use>
                 </svg>
-                <!-- </div> -->
-              </a>
-              <label class="agreement-label" for="agreement">
-                Oświadczam, iż akceptuję
-                <a href="#" class="agreement-link">Regulamin</a>
-                <span>i</span>
-                <a href="#" class="agreement-link">Politykę Prywatności</a><span>.</span>
-              </label>
+                <label class="agreement__label" for="agreement">
+                  Oświadczam, iż akceptuję
+                  <a href="#" class="agreement__link">Regulamin</a>
+                  <span class="txt-span">i</span>
+                  <a href="#" class="agreement__link">Politykę Prywatności</a><span>.</span>
+                </label>
+              </div>
             </li>
             <li class="button">
               <button class="button-submit" type="submit">
