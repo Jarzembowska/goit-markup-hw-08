@@ -11,15 +11,12 @@
   padding: 0 15px;
 
   &__items {
-    .portfolio-nav__item {
-      display: inline-block;
-
-      &:not(:last-child) {
-        margin-right: 4px;
-      }
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
+
 
 .portfolio-nav__button {
   font-weight: 500;

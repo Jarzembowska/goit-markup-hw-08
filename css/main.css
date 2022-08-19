@@ -368,11 +368,10 @@
   flex-grow: 0;
   padding: 0 15px;
 }
-.portfolio-nav__items .portfolio-nav__item {
-  display: inline-block;
-}
-.portfolio-nav__items .portfolio-nav__item:not(:last-child) {
-  margin-right: 4px;
+.portfolio-nav__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .portfolio-nav__button {
