@@ -22,7 +22,8 @@
   background-color: $atributesBackgroundColor;
   border-radius: 4px;
 }
-.attributes__icon-svg{
+
+.attributes__icon-svg {
   width: 70px;
   height: 70px;
 }
@@ -43,5 +44,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $contactColorMain;
+  color: $atributesDescColor;
 }

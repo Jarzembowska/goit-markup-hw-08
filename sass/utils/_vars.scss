@@ -17,6 +17,10 @@ $sliderButtonBackgroundHoverFocus: #098bf5;
 $sliderButtonTextColor: #fff;
 $sliderButtonBoxShadow: rgba(0, 0, 0, 0.15);
 $atributesBackgroundColor: #f5f4fa;
+$atributesDescColor: #757575;
+$activitiesLabelBackground: rgba(47, 48, 58, 0.8);
+$activitiesBoxBackground:#fff;
+$activitiesDescText:#fff;
 $teamBackgroundColor: #f5f4fa;
 $teamBoxCardBackground: #fff;
 $teamProfessionTextColor: #757575;
@@ -37,13 +41,16 @@ $footerNewsletterButtonBackgroundColor: #2196f3;
 $footerNewsletterButtonTextColor: #ffffff;
 $footerNewsletterButtonHover: #0d83e4;
 $portfolioButtonBackground: #f5f4fa;
+$portfolioButtonText:#fff;
+$portfolioDescBorder: #eeeeee;
+$portfolioInformationColor:#757575;
+$portfolioOverlayBackground: rgba(33, 150, 243, 0.9);
 $backdropBackgroundColor: rgba(0, 0, 0, 0.2);
 $backdropModalBackgroundColor: #ffffff;
 $backdropModalBoxShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 $backdropModalButtonCloseBorderColor: #0000001a;
 $backdropModalButtonIconHoverFocus: #fff;
-
 $orderLabelTextColor: #757575;
 $orderLableBorderColor: rgba(33, 33, 33, 0.2);
 $orderTextareaBorderColor: rgba(33, 33, 33, 0.2);
@@ -59,23 +66,3 @@ $orderButtonBackground: #2196f3;
 $orderButtonBackgroundHoverFocus: #1791f5;
 
 
-
-
-
-
-$accentColor: #2196f3;
-$colorLink: #000000;
-$backgroundColor: #2f303a;
-$contactColorMain: #757575;
-$contactColorFooter: rgba(255, 255, 255, 0.6);
-$contactLogoColor: #fff;
-
-$colorPortfolioFigc: #eeeeee;
-
-
-// $backgroundSlider: rgba(47, 48, 58, 0.4);
-
-
-$backgroundColorOverlay: rgba(33, 150, 243, 0.9);
-$backgroundWhatAreWeDoingLabel: rgba(47, 48, 58, 0.8);
-$colorWhatAreWeDoingLabel: #fff;
