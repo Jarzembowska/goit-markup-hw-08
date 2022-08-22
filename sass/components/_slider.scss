@@ -1,8 +1,10 @@
 /* sekcja pierwsza slider */
 .slider-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 1600px;
   height: 600px;
-  display: flex;
   margin:0 auto;
   background: linear-gradient($sliderGradientBackground, $sliderGradientBackground), url(../images/slider.jpg) no-repeat center;
   position: relative;
