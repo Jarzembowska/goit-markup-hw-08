@@ -209,13 +209,13 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   padding-top: 30px;
   padding-bottom: 10px;
 }
 
 .attributes__desc {
   display: flex;
-  justify-content: start;
   text-align: justify;
   font-size: 14px;
   line-height: 1.71;
@@ -237,7 +237,7 @@
   }
   .attributes__title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -252,7 +252,7 @@
   }
   .attributes__title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -266,7 +266,7 @@
   }
   .attributes__title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 .activities {
