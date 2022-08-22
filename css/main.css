@@ -229,8 +229,15 @@
     flex-wrap: wrap;
   }
   .attributes__item {
-    max-width: 450px;
+    max-width: 354px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .attributes__icon {
+    max-width: 354px;
+  }
+  .attributes__title {
+    display: flex;
+    justify-content: start;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -255,7 +262,7 @@
   }
   .attributes__item {
     max-width: 270px;
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
   .attributes__title {
     display: flex;
