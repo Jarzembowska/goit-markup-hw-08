@@ -269,57 +269,103 @@
     justify-content: flex-start;
   }
 }
-.activities {
-  width: 100%;
+@media only screen and (max-width: 480px) {
+  .activities {
+    display: none;
+  }
 }
-.activities__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  width: 370px;
-  height: 294px;
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .activities {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .activities {
+    display: none;
+  }
 }
 .activities__title {
   display: flex;
   justify-content: center;
-  font-weight: 700px;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  font-weight: 700;
   font-size: 35px;
-  line-height: 1.17;
+  line-height: 1.3;
   font-style: normal;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
 }
-.activities__list {
+
+.activities__items {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
   padding: 0 15px;
 }
-.activities__box {
+
+.activities__item {
   position: relative;
+  width: 370px;
+  height: 294px;
+  background-size: 370px 294px;
   background-color: #fff;
+}
+
+.activities__item--first-image {
+  background-image: url(/images/programer-working-his-desk-office_370-294.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .activities__item--first-image {
+    background-image: url(/images/programer-working-his-desk-office_740-588.jpg);
+  }
+}
+.activities__item--second-image {
+  background-image: url(/images/team-creators-is-working-interface-mobile-phones_370x294.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .activities__item--first-image {
+    background-image: url(/images/team-creators-is-working-interface-mobile-phones_740-588.jpg);
+  }
+}
+.activities__item--third-image {
+  background-image: url(/images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_370-294.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .activities__item--first-image {
+    background-image: url(/images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_740-588.jpg);
+  }
 }
 .activities__label {
   position: absolute;
-  bottom: 0px;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
+  bottom: 0px;
   background-color: rgba(47, 48, 58, 0.8);
 }
+
 .activities__desc {
+  position: absolute;
+  color: #fff;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
+  flex-direction: nowrap;
   justify-content: center;
-  align-items: center;
-  height: 100%;
-  color: #fff;
+  text-align: center;
 }
 
 .team {
