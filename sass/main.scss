@@ -6,9 +6,12 @@
 @import "components/attributes_mobile_first";
 // @import "components/activities";
 @import "components/activities_mobile_first";
+// @import "components/our_clients";
+@import "components/our_clients_mobile_first";
+
 @import "components/team";
 @import "components/portfolio";
-@import "components/our_clients";
+
 @import "components/footer";
 @import "components/modal";
 @import "components/order";
@@ -27,15 +30,6 @@ p {
   margin: 0;
 }
 
-// taki zapis jeśli będzie to wersja tylko dla desctop
-// .section {
-//   width: 1600px;
-//   margin: 0 auto;
-//   padding-bottom: 94px;
-//   padding-top: 94px;
-// }
-
-// do wersji razem z mobile
 .section {
   margin: 0 auto;
   padding-bottom: 94px;
@@ -48,13 +42,6 @@ p {
   }
 }
 
-// taki zapis jeśli będzie to wersjtylko z desctop
-// .container {
-//   width: 1200px;
-//   margin: auto;
-// }
-
-// do wersji razem z mobile
 .container {
   margin-left: auto;
   margin-right: auto;
