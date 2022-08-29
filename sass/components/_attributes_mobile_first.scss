@@ -1,6 +1,8 @@
 .attributes {
+  min-width: 320px;
   width: 100%;
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .attributes__items {
@@ -70,7 +72,11 @@
 
 }
 
-@media only screen and (min-width:768px) and (max-width: 1200px) {
+@media only screen and (min-width:768px) and (max-width: 1199px) {
+  .attributes {
+    padding-bottom: 40px;
+  }
+
   .attributes__items {
     justify-content: center;
     flex-direction: row;
@@ -89,6 +95,11 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .attributes {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .attributes__items {
     flex-direction: row;
     flex-wrap: nowrap;

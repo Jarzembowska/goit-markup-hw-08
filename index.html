@@ -2,9 +2,9 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Studio</title>
   <!-- link do pliku nomralize -->
   <link rel="stylesheet" href="css/normalize-css.css" />
@@ -13,67 +13,78 @@
 </head>
 
 <body>
-  <header>
-    <div class="page-header">
+  <main>
+    <!-- MENU HEADER -->
+    <header class="page-header">
       <div class="container">
         <div class="menu-header">
-          <a class="logo page-header__logo" href="index.html"><span class="logo__label">Web</span><span
-              class="logo__label page-header__logo--lable">Studio</span></a>
-
-          <nav class="nav">
-            <ul>
-              <li class="nav__item current-page">
-                <a class="nav__link" href="index.html">Agencja</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Kontakt</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="contact">
-            <li class="contact__item">
-              <a class="contact__link" href="mailto:info@example.com">
-                <svg class="contact__svg" width="16" height="12" viewBox="0 0 16 12">
-                  <use xlink:href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+          <ul class="menu-header__items">
+            <li class="menu-header__item menu-header__item--left">
+              <a class="logo page-header__logo " href="index.html"><span class="logo__label">Web</span><span
+                  class="logo__label page-header__logo--lable">Studio</span></a>
             </li>
-            <li class="contact__item">
-              <a class="contact__link" href="tel:+48111111111">
-                <svg class="contact__svg" width="10" height="16" viewBox="0 0 10 16">
-                  <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+            <li class="menu-header__item menu-header__item--right">
+              <button class="menu-toggle js-open-menu">
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#icon-menu_navigation_24px"></use>
                 </svg>
-                +48 111 111 111
-              </a>
+              </button>
             </li>
+            <li class="menu-header__item menu-header__item--left">
+              <nav class="nav">
+                <ul>
+                  <li class="nav__item current-page">
+                    <a class="nav__link" href="index.html">Agencja</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Kontakt</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="menu-header__item menu-header__item--right">
+              <ul class="contact__items">
+                <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@example.com">
+                    <svg class="contact__svg-mail" viewBox="0 0 16 12">
+                      <use xlink:href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link" href="tel:+48111111111">
+                    <svg class="contact__svg-phone" viewBox="0 0 10 16">
+                      <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +48 111 111 111
+                  </a>
+                </li>
+              </ul>
           </ul>
         </div>
+        </li>
       </div>
-    </div>
-  </header>
-
-  <main>
+    </header>
+    <!-- END MENU HEADER -->
     <!-- SLIDER -->
-    <section class="slider-area">
+    <section class="slider">
       <div class="container">
-        <div class="slider__image">
-          <h1 class="slider__title">
+        <div class="slider__area">
+          <h class="slider__title">
             EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-          </h1>
-          <button type="button" class="slider__button" data-modal-open>
-            Zamów usługe
-          </button>
+            </h1>
+            <button type="button" class="slider__button" data-modal-open>
+              Zamów usługe
+            </button>
         </div>
       </div>
     </section>
     <!-- END SLIDER -->
-
-    <!-- SECTION OUR ATTRIBUTES -->
+    <!-- SECTION ATTRIBUTES -->
     <section class="attributes">
       <div class="container">
         <ul class="attributes__items">
@@ -128,7 +139,7 @@
         </ul>
       </div>
     </section>
-    <!-- END SECTION OUR ATTRIBUTES -->
+    <!-- END SECTION ATTRIBUTES -->
     <!-- SECTION ACTIVITIES -->
     <section class="activities section">
       <div class="container">
@@ -157,43 +168,48 @@
       </div>
     </section>
     <!-- END ACTIVITIES -->
-
-    <!-- SECTION TEAM -->
-    <section class="team">
+    <!-- SECTION OUR TEAM -->
+    <section class="our-team">
       <div class="container">
-        <div class="our-team">
-          <h2 class="our-team__title">Nasz zespół</h2>
-          <div class="persons-cards">
+        <h2 class="our-team__title">Nasz zespół</h2>
+        <ul class="persons-cards__items">
+          <li class="persons-cards__item">
             <figure class="box-card">
-              <img class="box-card__image" src="./images/1img.jpg" alt="John Doe - Product Designer" width="270"
-                height="260" />
+              <picture class="box-card__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/John_Doe_01_270-260.jpg 1x,./images/John_Doe_01_540-520.jpg 2x" />
+                <!-- <source class="box-card__image" media="(min-width:768px)"
+                  srcset="./images/John_Doe_01_354-374.jpg 1x,./images/John_Doe_01_708-748.jpg 2x" /> -->
+                <img class="box-card__image" src="./images/John_Doe_01_450-460.jpg" alt="John Doe - Product Designer"
+                  srcset="./images/John_Doe_01_900-920.jpg 2x" />
+              </picture>
               <figcaption class="box-card__body">
                 <p class="name">John Doe</p>
                 <p class="profession">Product Designer</p>
                 <ul class="social-card__items">
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
-                      <svg width="20" height="20" viewBox="0 0 20 20">
+                    <a class="social-card__icon" href="">
+                      <svg class="social-card__icon-svg" width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
@@ -202,37 +218,45 @@
                 </ul>
               </figcaption>
             </figure>
+          </li>
 
+          <li class="persons-cards__item">
             <figure class="box-card">
-              <img class="box-card__image" src="./images/2img.jpg" alt="John Doe - Frontend Developer" width="270"
-                height="260" />
+              <picture class="box-card__image-area">
+                <source media="(min-width:1200px)"
+                  srcset="./images/John_Doe_02_270-260.jpg 1x,./images/John_Doe_02_540-520.jpg 2x" />
+                <!-- <source media="(min-width:768px)"
+                  srcset="./images/John_Doe_02_354-374.jpg 1x,./images/John_Doe_02_708-748.jpg 2x" /> -->
+                <img class="box-card__image" src="./images/John_Doe_02_450-460.jpg" alt="John Doe - Product Designer"
+                  srcset="./images/John_Doe_02_900-920.jpg 2x" />
+              </picture>
               <figcaption class="box-card__body">
                 <p class="name">John Doe</p>
                 <p class="profession">Frontend Developer</p>
                 <ul class="social-card__items">
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
@@ -241,36 +265,44 @@
                 </ul>
               </figcaption>
             </figure>
+          </li>
+          <li class="persons-cards__item">
             <figure class="box-card">
-              <img class="box-card__image" src="./images/3img.jpg" alt="John Doe - Marketing" width="270"
-                height="260" />
+              <picture class="box-card__image-area">
+                <source media="(min-width:1200px)"
+                  srcset="./images/John_Doe_03_270-260.jpg 1x,./images/John_Doe_03_540-520.jpg 2x" />
+                <!-- <source media="(min-width:768px)"
+                  srcset="./images/John_Doe_03_354-374.jpg 1x,./images/John_Doe_03_708-748.jpg 2x" /> -->
+                <img class="box-card__image" src="./images/John_Doe_03_450-460.jpg" alt="John Doe - Product Designer"
+                  srcset="./images/John_Doe_03_900-920.jpg 2x" />
+              </picture>
               <figcaption class="box-card__body">
                 <p class="name">John Doe</p>
                 <p class="profession">Marketing</p>
                 <ul class="social-card__items">
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
@@ -279,36 +311,44 @@
                 </ul>
               </figcaption>
             </figure>
+          </li>
+          <li class="persons-cards__item">
             <figure class="box-card">
-              <img class="box-card__image" src="./images/4img.jpg" alt="John Doe - UI Designer" width="270"
-                height="260" />
+              <picture class="box-card__image-area">
+                <source media="(min-width:1200px)"
+                  srcset="./images/John_Doe_04_270-260.jpg 1x,./images/John_Doe_04_540-520.jpg 2x" />
+                <!-- <source media="(min-width:768px)"
+                  srcset="./images/John_Doe_04_354-374.jpg 1x,./images/John_Doe_04_708-748.jpg 2x" /> -->
+                <img class="box-card__image" src="./images/John_Doe_04_450-460.jpg" alt="John Doe - Product Designer"
+                  srcset="./images/John_Doe_04_900-920.jpg 2x" />
+              </picture>
               <figcaption class="box-card__body">
                 <p class="name">John Doe</p>
-                <p class="profession">UI Designer</p>
+                <p class="profession">Ul Designer</p>
                 <ul class="social-card__items">
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-card__item">
-                    <a class="social-card__icon" href="#">
+                    <a class="social-card__icon" href="">
                       <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                       </svg>
@@ -317,54 +357,54 @@
                 </ul>
               </figcaption>
             </figure>
-          </div>
-        </div>
+          </li>
+        </ul>
+
       </div>
     </section>
     <!-- END SECTION TEAM -->
-
     <!-- SECTION OUR CLIENTS -->
     <section class="our-clients section">
       <div class="container">
         <h2 class="our-clients__title">Nasi klienci</h2>
         <ul class="clients__items">
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo1"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo2"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo3"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo4"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo5"></use>
               </svg>
             </a>
           </li>
           <li class="clients__item">
-            <a class="clients__icon" href="#">
+            <a class="clients__icon" href="">
               <svg class="clients__icon-svg" viewBox="0 0 106 60">
                 <use xlink:href="./images/icons.svg#icon-Logo6"></use>
               </svg>
@@ -375,175 +415,235 @@
     </section>
     <!-- END SECTION OUR CLIENTS -->
   </main>
-
+  <!-- FOOTER -->
   <footer class="page-footer">
     <div class="container">
-      <div class="footer">
-        <div class="contact-box">
-          <a class="logo page-footer__logo" href="index.html">
-            <span class="logo__label">Web</span><span class="logo__label page-footer__logo--lable">Studio
-            </span>
-          </a>
-          <address>
-            <ul class="address">
-              <li class="address__item">
-                m.Warszawa, Aleje Jerozilimskie 21
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@example.com">
-                  info@example.com
-                </a>
-              </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+48111111111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <!-- social card-->
-        <div class="social-card-footer">
-          <div class="social-card-footer__title">Dołącz do nas</div>
-          <ul class="social-card-footer__list">
-            <li class="social-card-footer__element">
-              <a class="social-card-footer__link" href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
+      <ul class="footer__items">
+        <!-- logo & address -->
+        <li class="footer__item">
+          <ul class="logo-address__items">
+            <li class="logo-address__item">
+              <a class="logo page-footer__logo" href="index.html">
+                <span class="logo__label">Web</span><span class="logo__label page-footer__logo--lable">Studio
+                </span>
               </a>
             </li>
-            <li class="social-card-footer__element">
-              <a class="social-card-footer__link" href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-card-footer__element">
-              <a class="social-card-footer__link" href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-card-footer__element">
-              <a class="social-card-footer__link" href="#">
-                <svg width="20" height="20" viewBox="0 0 20 20">
-                  <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
+            <li class="logo-address__item">
+              <address>
+                <ul class="address__items">
+                  <li class="address__item">
+                    m.Warszawa, Aleje Jerozolimskie 21
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="mailto:info@example.com">
+                      info@example.com
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__link" href="tel:+48111111111">+48 111 111 111</a>
+                  </li>
+                </ul>
+              </address>
             </li>
           </ul>
-        </div>
-        <!-- newsletter -->
-        <div class="newsletter">
-          <div class="newsletter__title"> Zapisz się do newslettera</div>
-          <!-- istnieją dwie metody do form POST oraz GET przy POST jeśli nie będziemy mieli zdefiniowanego backend serwera to nie będzie wiadomo co ma się stać po naciśnięciu wyślij -->
-          <!-- możemy tutaj ustawić również  -->
-          <!-- novalidate - ten formularz nie będzie wówczas walidowany  -->
-          <!-- autocomplete="off" przeglądarka nie będzie podpowiadała nam jaką wartość możemy wstawić np email który stosowaliśmy u siebie , zazwyczaj jednak nie ustawia się tego-->
-          <form class="newsletter__form" method="get">
-            <label class="newsletter__lable" for="newsletter">
-              <input class="newsletter__email" type="email" name="newsletter-email" placeholder="E-mail" id="newsletter"
-                required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
-            </label>
-            <button type="submit" class="newsletter__button">
-              Zapisz się
-              <svg class="newsletter__icon" width="24" height="24" viewBox="0 0 24 24">
-                <use xlink:href="./images/icons.svg#icon-icon-send">
-                </use>
-              </svg>
-            </button>
-          </form>
-        </div>
-        <!-- end newsletter -->
-      </div>
-    </div>
-  </footer>
-
-  <!-- modal -->
-  <div class="backdrop is-hidden" data-modal>
-    <div class="backdrop__background">
-      <div class="backdrop__modal">
-        <div class="backdrop__button-close">
-          <svg width="18" height="18" viewBox="0 0 18 18" class="backdrop__icon-close" data-modal-close>
-            <use xlink:href="./images/icons.svg#icon-close-black">
-            </use>
-          </svg>
-        </div>
-        <div class="order">
-          <div class="order__title">
-            Zostaw swoje dane w formularzu poniżej
-          </div>
-          <!-- FORM -->
-          <!-- <form action="get"> -->
-          <form>
-            <ul class="order__box">
-              <li class="order__items">
-                <label class="order__label" for="order-user-full-name">Imię
-                  <input class="order__input" type="text" name="order-user-full-name" id="order-user-full-name" required
-                    minlength="3" maxlength="20">
-                  <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
-                    <use xlink:href="./images/icons.svg#icon-person-black-18dp">
-                    </use>
+        </li>
+        <!-- end logo & address -->
+        <!-- social card-->
+        <li class="footer__item">
+          <div class="social-footer__items">
+            <div class="social-card-footer__title">Dołącz do nas</div>
+            <ul class="social-card-footer__items">
+              <li class="social-card-footer__item">
+                <a class="social-card-footer__icon" href="">
+                  <svg class="social-card-footer__icon-svg" viewBox="0 0 20 20">
+                    <use xlink:href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
-                </label>
+                </a>
               </li>
-              <li class="order__items">
-                <label class="order__label" for="order-user-phone">Telefon
-                  <input class="order__input" type="tel" name="order-user-phone" id="order-user-phone" required
-                    minlength="9" maxlength="9">
-                  <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
-                    <use xlink:href="./images/icons.svg#icon-phone-black-18dp">
-                    </use>
+              <li class="social-card-footer__item">
+                <a class="social-card-footer__icon" href="">
+                  <svg class="social-card-footer__icon-svg" viewBox="0 0 20 20">
+                    <use xlink:href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
-                </label>
+                </a>
               </li>
-              <li class="order__items">
-                <label class="order__label" for="order-user-email">E-mail
-                  <input class="order__input" type="email" name="order-user-email" id="order-user-email" required
-                    pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
-                  <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
-                    <use xlink:href="./images/icons.svg#icon-email-black-18dp">
-                    </use>
+              <li class="social-card-footer__item">
+                <a class="social-card-footer__icon" href="">
+                  <svg class="social-card-footer__icon-svg" viewBox="0 0 20 20">
+                    <use xlink:href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
-                </label>
+                </a>
               </li>
-              <li class="order__items">
-                <label class="order__label" for="order-user-comment">Komentarz
-                  <textarea class="order__textarea" name="order-user-comment" id="order-user-comment"
-                    placeholder="Wprowadź tekst" required></textarea>
-                </label>
-              </li>
-              <li class="agreement">
-                <div class="agreement-check">
-                  <input class="checkbox-input" type="checkbox" name="order-user-agreement" value="agreement"
-                    id="agreement" required />
-                  <svg class="checkbox-input__icon" viewBox="0 0 17 17">
-                    <use class="checkbox-input__icon--unchecked" xlink:href="./images/icons.svg#icon-icon-uncheck">
-                    </use>
-                    <use class="checkbox-input__icon--checked" xlink:href="./images/icons.svg#icon-check">
-                    </use>
+              <li class="social-card-footer__item">
+                <a class="social-card-footer__icon" href="">
+                  <svg class="social-card-footer__icon-svg" viewBox="0 0 20 20">
+                    <use xlink:href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
-                  <label class="agreement__label" for="agreement">
-                    Oświadczam, iż akceptuję
-                    <a href="#" class="agreement__link">Regulamin</a>
-                    <span class="txt-span">i</span>
-                    <a href="#" class="agreement__link">Politykę Prywatności</a><span>.</span>
-                  </label>
-                </div>
-              </li>
-              <li class="button">
-                <button class="button-submit" type="submit">
-                  Wyślij
-                </button>
+                </a>
               </li>
             </ul>
-          </form>
+          </div>
+        </li>
+
+        </li>
+        <!-- end social card -->
+
+        <!-- newsletter -->
+        <li class="footer__item">
+          <ul class="newsletter__items">
+            <li class="newsletter__item">
+              <div class="newsletter__title"> Zapisz się do newslettera</div>
+            </li>
+            <li class="newsletter__item">
+              <form class="newsletter__form" method="get">
+                <label class="newsletter__lable" for="newsletter">
+                  <input class="newsletter__input" type="email" name="newsletter-email" placeholder="E-mail"
+                    id="newsletter" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                </label>
+                <button type="submit" class="newsletter__button">
+                  Zapisz się
+                  <svg class="newsletter__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="./images/icons.svg#icon-icon-send">
+                    </use>
+                  </svg>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <!-- end newsletter -->
+      </ul>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- MODAL ORDER -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop__modal">
+      <div class="backdrop__button-close">
+        <svg width="18" height="18" viewBox="0 0 18 18" class="backdrop__icon-close" data-modal-close>
+          <use xlink:href="./images/icons.svg#icon-close-black">
+          </use>
+        </svg>
+      </div>
+      <div class="order">
+        <div class="order__title">
+          Zostaw swoje dane w formularzu poniżej
         </div>
+        <!-- FORM -->
+        <!-- <form action="get"> -->
+        <form class="order__box">
+          <ul class="order__items">
+            <li class="order__item">
+              <label class="order__label" for="order-user-full-name">Imię
+                <input class="order__input" type="text" name="order-user-full-name" id="order-user-full-name" required
+                  minlength="3" maxlength="20">
+                <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-person-black-18dp">
+                  </use>
+                </svg>
+              </label>
+            </li>
+            <li class="order__item">
+              <label class="order__label" for="order-user-phone">Telefon
+                <input class="order__input" type="tel" name="order-user-phone" id="order-user-phone" required
+                  minlength="9" maxlength="9">
+                <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-phone-black-18dp">
+                  </use>
+                </svg>
+              </label>
+            </li>
+            <li class="order__item">
+              <label class="order__label" for="order-user-email">E-mail
+                <input class="order__input" type="email" name="order-user-email" id="order-user-email" required
+                  pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+                <svg class="order__icon-svg" width="18" height="18" viewBox="0 0 18 18">
+                  <use xlink:href="./images/icons.svg#icon-email-black-18dp">
+                  </use>
+                </svg>
+              </label>
+            </li>
+            <li class="order__item">
+              <label class="order__label" for="order-user-comment">Komentarz
+                <textarea class="order__textarea" name="order-user-comment" id="order-user-comment"
+                  placeholder="Wprowadź tekst" required></textarea>
+              </label>
+            </li>
+            <li class="agreement">
+              <div class="agreement-check">
+                <input class="checkbox-input" type="checkbox" name="order-user-agreement" value="agreement"
+                  id="agreement" required />
+                <svg class="checkbox-input__icon" viewBox="0 0 17 17">
+                  <use class="checkbox-input__icon--unchecked" xlink:href="./images/icons.svg#icon-icon-uncheck">
+                  </use>
+                  <use class="checkbox-input__icon--checked" xlink:href="./images/icons.svg#icon-check">
+                  </use>
+                </svg>
+                <label class="agreement__label" for="agreement">
+                  Oświadczam, iż akceptuję
+                  <a href="#" class="agreement__link">Regulamin</a>
+                  <span class="txt-span">i</span>
+                  <a href="#" class="agreement__link">Politykę Prywatności</a><span>.</span>
+                </label>
+              </div>
+            </li>
+            <li class="button">
+              <button class="button-submit" type="submit">
+                Wyślij
+              </button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
   </div>
+  <!-- END MODAL ORDER -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle-close js-close-menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" class="menu-container__icon-close js-close-menu">
+        <use xlink:href="./images/icons.svg#icon-close_24px">
+        </use>
+      </svg>
+    </button>
+    <ul class="mobile__items">
+      <li class="mobile__item">
+        <a href="index.html" class="mobile-menu__link">Agencja</a>
+        <a href="./portfolio.html" class="mobile-menu__link">Portfolio</a>
+        <a href="" class="mobile-menu__link">Kontakt</a>
+      </li>
+      <li class="mobile__item">
+        <ul class="mobile-contact__items">
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link-phone" href="tel:+48111111111">
+              +48 111 111 111
+            </a>
+          </li>
+          <li class="mobile-contact__item">
+            <a class="mobile-contact__link-mail" href="mailto:info@example.com">
+              info@devstudio.com
+            </a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="mobile__item">
+        <ul class="social-mobile__items">
+          <li class="social-mobile__item"><a class="social-mobile__link" href="">Instagram</a></li>
+          <li class="social-mobile__item"><a class="social-mobile__link" href="">Twitter</a></li>
+          <li class="social-mobile__item"><a class="social-mobile__link" href="">Facebook</a></li>
+          <li class="social-mobile__item"><a class="social-mobile__link" href="">LinkedIn</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- MODAL MENU MOBILE LINK -->
+
   <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></Script>
 </body>
 
 </html>
