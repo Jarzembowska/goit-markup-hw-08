@@ -70,9 +70,13 @@
 
   <main class="portfolio-pages section">
     <div class="container">
+      <!-- filer-bar -->
       <div class="portfolio-nav">
+
         <ul class="portfolio-nav__items">
+
           <li class="portfolio-nav__item">
+
             <button class="portfolio-nav__button">Wszystkie</button>
           </li>
           <li class="portfolio-nav__item">
@@ -84,14 +88,25 @@
           <li class="portfolio-nav__item">
             <button class="portfolio-nav__button">Dizajn</button>
           </li>
-          <li class="portfolio-nav__item"><button class="portfolio-nav__button">Marketing</button></li>
+          <li class="portfolio-nav__item">
+            <button class="portfolio-nav__button">Marketing</button>
+          </li>
         </ul>
       </div>
+
+
+      <!-- projects -->
+
       <div class="portfolio__box-area">
         <ul class="portfolio__items">
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/technocrack.jpg" alt="laptop" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Technocrack_370-294-1.jpg 1x, ./images/Technocrack_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/technocrack_450-294.jpg"
+                  alt="Laptop Width Page Technocrack" srcset="./images/technocrack_900-588x2.jpg 2x" />
+              </picture>
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -106,8 +121,15 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/two_players_new_orlean_vs_golden_star.jpg"
-                alt="two players new orlean vs golden star" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Poster_New_Orlean_vs_Golden_Star_370-294-1.jpg 1x, ./images/Poster_New_Orlean_vs_Golden_Star_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Poster_New_Orlean_vs_Golden_Star_450-294.jpg"
+                  alt="Two Players New Orlean Vs Golden Star"
+                  srcset="./images/Poster_New_Orlean_vs_Golden_Star_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/two_players_new_orlean_vs_golden_star.jpg"
+                alt="two players new orlean vs golden star" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -122,8 +144,14 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/logo_restaurant_seafood.jpg" alt="logo restaurant seafood"
-                width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Restauracja_Seafood_370-294-1.jpg 1x, ./images/Restauracja_Seafood_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Restaurant_Seafood_450-294.jpg"
+                  alt="Logo Restaurant Seafood" srcset="./images/Restaurant_Seafood_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/logo_restaurant_seafood.jpg" alt="logo restaurant seafood"
+                width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -138,8 +166,14 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/headphones_project_prime.jpg" alt="headphones
-                project prime" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Project_Prime_370-294-1.jpg 1x, ./images/Project_Prime_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Project_Prime_450-294.jpg" alt="Project Prime"
+                  srcset="./images/Project_Prime_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/headphones_project_prime.jpg" alt="headphones
+                project prime" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -154,8 +188,14 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/two_project_boxes.jpg" alt="two boxes" width="370"
-                height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Project_Boxes_370-294-1.jpg 1x, ./images/Project_Boxes_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Project_Boxes_450-294.jpg" alt="Project Two Boxes"
+                  srcset="./images/Project_Boxes_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/two_project_boxes.jpg" alt="two boxes" width="370"
+                height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -170,8 +210,15 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/monitor_with_a_website_inspiration_has_no_limits.jpg"
-                alt="monitor with a website inspiration has no limits" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Inspiration_has_no_Borders_370-294-1.jpg 1x, ./images/Inspiration_has_no_Borders_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Inspiration_has_no_Borders_450-294.jpg"
+                  alt="Monitor Width A Website Inspiration Has No Limits"
+                  srcset="./images/Inspiration_has_no_Borders_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/monitor_with_a_website_inspiration_has_no_limits.jpg"
+                alt="monitor with a website inspiration has no limits" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -186,8 +233,14 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/magazine_limited_edition.jpg" alt="magazine
-                limited edition" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Magazyn_Limited_Edition_370-294-1.jpg 1x, ./images/Magazyn_Limited_Edition_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Magazine_Limited_Edition_450-294.jpg"
+                  alt="Magazine Limited Edition" srcset="./images/Magazine_Limited_Edition_900-588 x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/magazine_limited_edition.jpg" alt="magazine
+                limited edition" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -202,8 +255,15 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/tag_with_the_inscription_label_tag.jpg"
-                alt="tag witj the inscrition label tag" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Project_LAB_370-294-1.jpg 1x, ./images/Project_LAB_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Project_LAB_450-294.jpg"
+                  alt="Tag Width The Inscrition Label Tag" srcset="./images/Project_LAB_900-588x2.jpg 2x" />
+              </picture>
+
+              <!-- <img class="portfolio-box__img" src="./images/tag_with_the_inscription_label_tag.jpg"
+            alt="tag width the inscrition label tag" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
@@ -218,8 +278,14 @@
           </li>
           <li class="portfolio__item">
             <figure class="portfolio-box">
-              <img class="portfolio-box__img" src="./images/growing_bussiness.jpg" alt="laptop growing
-                bussiness" width="370" height="294" />
+              <picture class="portfolio-box__image-area">
+                <source class="box-card__image" media="(min-width:1200px)"
+                  srcset="./images/Growing_Business_370-294-1.jpg 1x, ./images/Growing_Business_740-588-2.jpg 2x" />
+                <img class="portfolio-box__img" src="./images/Growing_Business_450-294.jpg"
+                  alt="Laptop Width Page Growing Busines" srcset="./images/Growing_Business_900-588x2.jpg 2x" />
+              </picture>
+              <!-- <img class="portfolio-box__img" src="./images/growing_bussiness.jpg" alt="laptop growing
+                bussiness" width="370" height="294" /> -->
               <div class="portfolio-box__overlay">
                 <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni harum officia et
                   similique
